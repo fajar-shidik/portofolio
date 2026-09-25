@@ -69,6 +69,28 @@
     nav.side{display:none;}
     section{padding:90px 0 30px;}
   }
+
+  .project-entry{display:grid; grid-template-columns:110px 1fr; gap:20px; padding:28px 0; border-top:1px solid var(--line);}
+  .project-entry time{font-family:var(--font-mono); font-size:11px; color:var(--dim); padding-top:3px;}
+  .project-entry h3{margin:0 0 6px; font-size:22px; font-weight:500;}
+  .project-entry .org{font-family:var(--font-mono); font-size:12px; color:var(--accent); margin-bottom:14px;}
+  .project-entry .project-summary{margin:0 0 18px; color:var(--dim); font-size:14.5px; line-height:1.7;}
+  .project-detail{display:grid; gap:14px; margin-top:18px;}
+  .project-detail-block{padding-top:14px; border-top:1px dashed var(--line);}
+  .project-detail-block h4{margin:0 0 7px; font-family:var(--font-mono); font-size:11px; font-weight:500; color:var(--text); text-transform:uppercase; letter-spacing:.04em;}
+  .project-detail-block p{margin:0; color:var(--dim); font-size:13.5px; line-height:1.7;}
+  .project-detail-block ul{margin:0; padding-left:18px; color:var(--dim); font-size:13.5px; line-height:1.7;}
+  .tech-stack{display:flex; flex-wrap:wrap; gap:7px; margin-top:8px;}
+  .tech-stack span{font-family:var(--font-mono); font-size:10.5px; border:1px solid var(--line); padding:5px 8px; border-radius:3px; color:var(--dim);}
+  .project-links{display:flex; flex-wrap:wrap; gap:12px; margin-top:18px;}
+  .project-links a{font-family:var(--font-mono); font-size:11px; text-decoration:none; color:var(--text); border:1px solid var(--line); padding:7px 10px; border-radius:3px; transition:.2s;}
+  .project-links a:hover{border-color:var(--accent); color:var(--accent);}
+  .verified-note{font-family:var(--font-mono); font-size:10px; color:var(--dim); margin-top:14px;}
+  @media (max-width:820px){
+    .project-entry{grid-template-columns:1fr; gap:8px;}
+    .project-entry time{padding-top:0;}
+  }
+
 </style>
 </head>
 <body>
@@ -155,21 +177,113 @@
   <section id="projects">
     <h2 class="head">03 — Proyek</h2>
 
-    <div class="entry">
+    <div class="project-entry">
       <time>2024<br>Jan–Feb</time>
       <div>
         <h3>Moment It</h3>
-        <div class="org">Website media sosial dokumentasi publik</div>
-        <p>Platform untuk mendokumentasikan dan membagikan momen berharga secara publik — dari analisis kebutuhan, pengembangan fitur album &amp; share, sampai deploy online. Kepuasan pelanggan naik 20% setelah fitur album dan share dirilis.</p>
+        <div class="org">Platform media sosial untuk dokumentasi dan berbagi momen</div>
+
+        <p class="project-summary">
+          Platform web untuk mendokumentasikan dan membagikan momen berharga secara publik.
+          Proyek mencakup proses pengembangan aplikasi berbasis CodeIgniter 4, pengelolaan
+          tampilan dengan Tailwind CSS, serta struktur aplikasi yang dipisahkan antara source,
+          public assets, writable data, dan automated tests.
+        </p>
+
+        <div class="project-detail">
+          <div class="project-detail-block">
+            <h4>Peran &amp; kontribusi</h4>
+            <ul>
+              <li>Mengembangkan aplikasi web dari tahap kebutuhan hingga implementasi fitur.</li>
+              <li>Mengerjakan fitur album dan berbagi konten sebagai bagian dari pengalaman pengguna.</li>
+              <li>Menyusun struktur tampilan menggunakan utility class Tailwind CSS.</li>
+              <li>Menyiapkan struktur pengujian menggunakan PHPUnit yang tersedia pada proyek.</li>
+            </ul>
+          </div>
+
+          <div class="project-detail-block">
+            <h4>Teknologi</h4>
+            <div class="tech-stack">
+              <span>PHP</span>
+              <span>CodeIgniter 4</span>
+              <span>Tailwind CSS 3</span>
+              <span>Laravel Mix</span>
+              <span>PHPUnit</span>
+            </div>
+          </div>
+
+          <div class="project-detail-block">
+            <h4>Hasil</h4>
+            <p>
+              Berdasarkan dokumentasi proyek pada portofolio, fitur album dan share dikaitkan
+              dengan peningkatan kepuasan pelanggan sebesar 20%.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-links">
+          <a href="https://github.com/fajar-shidik/Moment-it" target="_blank" rel="noopener">↗ GitHub Repository</a>
+        </div>
+
+        <div class="verified-note">
+          Stack di atas diverifikasi dari composer.json, package.json, dan tailwind.config.js repository.
+        </div>
       </div>
     </div>
 
-    <div class="entry">
+    <div class="project-entry">
       <time>2023<br>Jul–Sep</time>
       <div>
         <h3>Majestic</h3>
-        <div class="org">Toko online pakaian, celana &amp; sepatu</div>
-        <p>Tema disesuaikan dengan identitas brand, fitur utama toko dibangun dari awal, dan pembayaran online diintegrasikan langsung. Hasilnya: pembelian naik 20%, kunjungan website naik 15%.</p>
+        <div class="org">E-commerce pakaian, celana &amp; sepatu</div>
+
+        <p class="project-summary">
+          Website toko online yang dikembangkan dengan PHP dan CodeIgniter.
+          Proyek menggunakan struktur aplikasi CodeIgniter dengan komponen application,
+          assets, system, upload, user guide, dan vendors, sehingga mencakup sisi aplikasi
+          sekaligus pengelolaan aset dan file yang diperlukan website.
+        </p>
+
+        <div class="project-detail">
+          <div class="project-detail-block">
+            <h4>Peran &amp; kontribusi</h4>
+            <ul>
+              <li>Menyesuaikan tampilan website dengan identitas brand.</li>
+              <li>Membangun fitur utama toko dari awal sesuai kebutuhan proyek.</li>
+              <li>Mengintegrasikan pembayaran online pada alur pembelian.</li>
+              <li>Mengelola struktur aplikasi dan aset dalam lingkungan CodeIgniter.</li>
+            </ul>
+          </div>
+
+          <div class="project-detail-block">
+            <h4>Teknologi</h4>
+            <div class="tech-stack">
+              <span>PHP</span>
+              <span>CodeIgniter</span>
+              <span>MySQL</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+
+          <div class="project-detail-block">
+            <h4>Hasil</h4>
+            <p>
+              Berdasarkan dokumentasi proyek pada portofolio, implementasi website dikaitkan
+              dengan peningkatan pembelian sebesar 20% dan kunjungan website sebesar 15%.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-links">
+          <a href="https://github.com/fajar-shidik/Majestic" target="_blank" rel="noopener">↗ GitHub Repository</a>
+        </div>
+
+        <div class="verified-note">
+          Repository memverifikasi penggunaan PHP dan CodeIgniter; detail fitur bisnis dan metrik hasil
+          dipertahankan dari deskripsi proyek yang sudah ada di portofolio.
+        </div>
       </div>
     </div>
   </section>
