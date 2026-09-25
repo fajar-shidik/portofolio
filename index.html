@@ -135,9 +135,10 @@
         <h3>Freelance Full Stack Developer</h3>
         <div class="org">Digital Intech Nexora, Kota Depok</div>
         <ul>
-          <li>Mengembangkan REST API dengan Laravel dan PostgreSQL untuk aplikasi internal klien</li>
-          <li>Membangun autentikasi, CRUD, dan hak akses berbasis role</li>
-          <li>Merancang relasi database dan optimasi query untuk performa API</li>
+          <li>Mengembangkan dan memelihara aplikasi web menggunakan Laravel dan PostgreSQL.</li>
+          <li>Membangun REST API, authentication, CRUD, serta role-based access control untuk kebutuhan aplikasi.</li>
+          <li>Merancang relasi database dan mengimplementasikan business logic pada sisi backend.</li>
+          <li>Menggunakan Git/GitHub untuk version control dan kolaborasi pengembangan.</li>
         </ul>
       </div>
     </div>
@@ -174,44 +175,88 @@
     </div>
   </section>
 
-  <section id="projects">
+  <section id="projects">  <section id="projects">
     <h2 class="head">03 — Proyek</h2>
 
     <div class="project-entry">
-      <time>2024<br>Jan–Feb</time>
+      <time>2026<br>Apr–Jul</time>
       <div>
-        <h3>Moment It</h3>
-        <div class="org">Platform media sosial untuk dokumentasi dan berbagi momen</div>
+        <h3>Smart School</h3>
+        <div class="org">Education Management System — Full Stack Development</div>
 
         <p class="project-summary">
-          Platform web untuk mendokumentasikan dan membagikan momen berharga secara publik.
-          Proyek mencakup proses pengembangan aplikasi berbasis CodeIgniter 4, pengelolaan
-          tampilan dengan Tailwind CSS, serta struktur aplikasi yang dipisahkan antara source,
-          public assets, writable data, dan automated tests.
+          Sistem manajemen sekolah berbasis web yang dikembangkan dengan Laravel dan PostgreSQL
+          untuk menangani proses akademik, administrasi, komunikasi, presensi, ujian, pembayaran,
+          serta pengelolaan data sekolah dalam satu platform.
         </p>
 
         <div class="project-detail">
           <div class="project-detail-block">
-            <h4>Peran &amp; kontribusi</h4>
+            <h4>Kontribusi &amp; implementasi</h4>
             <ul>
-              <li>Mengembangkan aplikasi web dari tahap kebutuhan hingga implementasi fitur.</li>
-              <li>Mengerjakan fitur album dan berbagi konten sebagai bagian dari pengalaman pengguna.</li>
-              <li>Menyusun struktur tampilan menggunakan utility class Tailwind CSS.</li>
-              <li>Menyiapkan struktur pengujian menggunakan PHPUnit yang tersedia pada proyek.</li>
+              <li>Mengembangkan REST API menggunakan Laravel untuk mendukung modul dan proses bisnis aplikasi.</li>
+              <li>Menerapkan arsitektur multi-tenant untuk memisahkan dan mengelola data antar sekolah.</li>
+              <li>Mengimplementasikan authentication dan role-based access control untuk membatasi akses berdasarkan peran pengguna.</li>
+              <li>Membangun modul akademik yang mencakup pengelolaan siswa, kelas, mata pelajaran, jadwal, penilaian, rapor, dan ujian.</li>
+              <li>Mengelola migration dan relasi database PostgreSQL untuk mendukung kebutuhan berbagai modul aplikasi.</li>
+              <li>Menerapkan audit log, failed-job management, monitoring kesehatan server, dan pengelolaan storage.</li>
             </ul>
           </div>
 
           <div class="project-detail-block">
             <h4>Teknologi</h4>
             <div class="tech-stack">
+              <span>Laravel 12</span>
               <span>PHP</span>
-              <span>CodeIgniter 4</span>
-              <span>Tailwind CSS 3</span>
-              <span>Laravel Mix</span>
-              <span>PHPUnit</span>
+              <span>PostgreSQL</span>
+              <span>Laravel Sanctum</span>
+              <span>Laravel Fortify</span>
+              <span>Spatie Permission</span>
+              <span>Livewire</span>
+              <span>Git</span>
             </div>
           </div>
 
+          <div class="project-detail-block">
+            <h4>Fokus pengembangan</h4>
+            <p>
+              Backend architecture, REST API, database design, authentication &amp; authorization,
+              business logic, third-party integration, real-time functionality, serta pengelolaan
+              proses administratif dan akademik.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-entry">
+      <time>2024<br>Jan–Feb</time>
+      <div>
+        <h3>Moment It</h3>
+        <div class="org">Platform media sosial untuk dokumentasi dan berbagi momen</div>
+        <p class="project-summary">
+          Platform web untuk mendokumentasikan dan membagikan momen berharga secara publik.
+          Proyek mencakup proses pengembangan aplikasi berbasis CodeIgniter 4, pengelolaan
+          tampilan dengan Tailwind CSS, serta struktur aplikasi yang dipisahkan antara source,
+          public assets, writable data, dan automated tests.
+        </p>
+        <div class="project-detail">
+          <div class="project-detail-block">
+            <h4>Kontribusi &amp; implementasi</h4>
+            <ul>
+              <li>Mengembangkan aplikasi web dari tahap kebutuhan hingga implementasi fitur.</li>
+              <li>Mengerjakan fitur album dan berbagi konten sebagai bagian dari pengalaman pengguna.</li>
+              <li>Menyusun struktur tampilan menggunakan utility class Tailwind CSS.</li>
+              <li>Menyiapkan struktur pengujian menggunakan PHPUnit.</li>
+            </ul>
+          </div>
+          <div class="project-detail-block">
+            <h4>Teknologi</h4>
+            <div class="tech-stack">
+              <span>PHP</span><span>CodeIgniter 4</span><span>Tailwind CSS 3</span>
+              <span>Laravel Mix</span><span>PHPUnit</span>
+            </div>
+          </div>
           <div class="project-detail-block">
             <h4>Hasil</h4>
             <p>
@@ -219,14 +264,6 @@
               dengan peningkatan kepuasan pelanggan sebesar 20%.
             </p>
           </div>
-        </div>
-
-        <div class="project-links">
-          <a href="https://github.com/fajar-shidik/Moment-it" target="_blank" rel="noopener">↗ GitHub Repository</a>
-        </div>
-
-        <div class="verified-note">
-          Stack di atas diverifikasi dari composer.json, package.json, dan tailwind.config.js repository.
         </div>
       </div>
     </div>
@@ -236,17 +273,13 @@
       <div>
         <h3>Majestic</h3>
         <div class="org">E-commerce pakaian, celana &amp; sepatu</div>
-
         <p class="project-summary">
-          Website toko online yang dikembangkan dengan PHP dan CodeIgniter.
-          Proyek menggunakan struktur aplikasi CodeIgniter dengan komponen application,
-          assets, system, upload, user guide, dan vendors, sehingga mencakup sisi aplikasi
-          sekaligus pengelolaan aset dan file yang diperlukan website.
+          Website toko online yang dikembangkan dengan PHP dan CodeIgniter, dengan penyesuaian
+          tampilan terhadap identitas brand dan integrasi pembayaran online.
         </p>
-
         <div class="project-detail">
           <div class="project-detail-block">
-            <h4>Peran &amp; kontribusi</h4>
+            <h4>Kontribusi &amp; implementasi</h4>
             <ul>
               <li>Menyesuaikan tampilan website dengan identitas brand.</li>
               <li>Membangun fitur utama toko dari awal sesuai kebutuhan proyek.</li>
@@ -254,19 +287,13 @@
               <li>Mengelola struktur aplikasi dan aset dalam lingkungan CodeIgniter.</li>
             </ul>
           </div>
-
           <div class="project-detail-block">
             <h4>Teknologi</h4>
             <div class="tech-stack">
-              <span>PHP</span>
-              <span>CodeIgniter</span>
-              <span>MySQL</span>
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
+              <span>PHP</span><span>CodeIgniter</span><span>MySQL</span>
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
             </div>
           </div>
-
           <div class="project-detail-block">
             <h4>Hasil</h4>
             <p>
@@ -274,15 +301,6 @@
               dengan peningkatan pembelian sebesar 20% dan kunjungan website sebesar 15%.
             </p>
           </div>
-        </div>
-
-        <div class="project-links">
-          <a href="https://github.com/fajar-shidik/Majestic" target="_blank" rel="noopener">↗ GitHub Repository</a>
-        </div>
-
-        <div class="verified-note">
-          Repository memverifikasi penggunaan PHP dan CodeIgniter; detail fitur bisnis dan metrik hasil
-          dipertahankan dari deskripsi proyek yang sudah ada di portofolio.
         </div>
       </div>
     </div>
